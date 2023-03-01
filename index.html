@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js arthmatic operators</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center text-capitalize">
+        <h1 class="text-center text-uppercase mt-5">js using arithmatic addition operators</h1>
+        <div class="form text-center mt-5 bg-info w-100 pt-3">
+            <label>enter the first num:</label>
+            <input type="text"  placeholder="enter number" id="num1"><br>
+            <br>
+            <label>enter the second num:</label>
+            <input type="text"  placeholder="enter number" id="num2">
+            <br>
+            <br>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle text-capitalize" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  arthmatic operators
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#" id="addition" onclick="add()">add</a></li>
+                  <li><a class="dropdown-item" href="#" id="subtraction" onclick="sub()">sub</a></li>
+                  <li><a class="dropdown-item" href="#" id="multply" onclick="mult()">multiply</a></li>
+                  <li><a class="dropdown-item" href="#" id="multply" onclick="div()">div</a></li>
+                </ul>
+              </div>
+              <BR>
+              <p class="bg-warning">result= <span id="res"></span>
+              </p>
+        </div>
+    </div>
+       <script>
+            var fnum,snum,dropdownMenuButton1,result;
+        function add(){
+            var fnum=parseInt(document.getElementById("num1").value);
+            var snum=parseInt(document.getElementById("num2").value);
+            var tot=parseInt(fnum)+parseInt(snum);
+            var result=document.getElementById('res');
+            result.innerHTML=tot;
+        }
+        function sub(){
+            var fnum=parseInt(document.getElementById("num1").value);
+            var snum=parseInt(document.getElementById("num2").value);
+            var tot=parseInt(fnum)-parseInt(snum);
+            var result=document.getElementById('res');
+            result.innerHTML=tot;
+        }
+        function mult(){
+            var fnum=parseInt(document.getElementById("num1").value);
+            var snum=parseInt(document.getElementById("num2").value);
+            var tot=parseInt(fnum)*parseInt(snum);
+            var result=document.getElementById('res');
+            result.innerHTML=tot;
+        }
+
+        function div(){
+            var fnum=parseInt(document.getElementById("num1").value);
+            var snum=parseInt(document.getElementById("num2").value);
+            var tot=parseInt(fnum)/parseInt(snum);
+            var result=document.getElementById('res');
+            result.innerHTML=tot;
+        }
+
+    </script>
+
+</body>
+</html>
